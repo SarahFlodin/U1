@@ -40,20 +40,34 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number
 
 
 // E6:  To get the value shown in an input field we use this:
-//      document.querySelector("#input_test_1").value
+document.querySelector("#input_test_1").value = "13";
+console.log("input_test_1");
 //      Log to the console the current value of #input_test_1. It should
 //      be 13, if you managed the previous E correctly.
 
 
 // E7:  Add a button <button> to the HTML-file.
 //      Give it the id "button_test_1"
-
+let button = document.getElementById("button_test_1");
+console.log(button_test_1);
 
 // E8:  Add an event listener to the button so that when the user clicks on it
 //      the browser logs the current value of the input field on the console.
 //      Test this by manually changing the value of the input field. That is,
 //      by going to the webpage and changing that value.
+button.addEventListener("click",function() {
+    let Value = document.getElementById("input_test_1").value;
+    console.log(parseInt(Value));
+    return Value;
+    
+});
 
+button.addEventListener("click",function() {
+    let Value = document.getElementById("input_test_1").value;
+    console.log(parseInt(Value)+ 23);
+    return Value;
+    
+});
 
 // E9:  NOTE that the value from the input field is a string, even if the input
 //      had type="number". You can see this in two ways:
@@ -66,10 +80,11 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number
 //      This can be done with parseInt().
 //      So parseInt("1") will return the number 1
 //      What will be logged in the lines below?
-let a = "23";
+
+
+
 // console.log( parseInt( a ) + 1 );
 // console.log( a + 1 );
-
 
 // E11: Code a function (F1) that adds 23 to the number in the input field and
 //      logs the result to the console.
