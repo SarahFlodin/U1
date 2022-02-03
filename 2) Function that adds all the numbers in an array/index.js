@@ -25,7 +25,17 @@ function adder_three ( _array ) {
 }
 
 
-/*
+function adder (_array) {
+  let sum = 0;
+  for ( let i = 0; i < _array.length; i++ ) {
+  sum = sum + _array[i]; 
+  }
+  return sum;
+}
+console.log(adder([5, 2, 1, 7]));
+console.log(adder([1]));
+console.log(adder([0]));
+/*  
 
 The problem with adder_three is that it only works if the argument is an array of 3 elements.
 
