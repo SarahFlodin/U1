@@ -45,10 +45,21 @@ VIDEO:  Record a video where you explain how averg works line by line. Max 3 min
 */
 
 // Copy your earlier function here
-function adder ( _array ) {}
-
-function averg ( _array ) {
-  // in here you must use adder
+function adder (_array) {
+  let sum = 0;
+  for ( let i = 0; i < _array.length; i++ ) {
+    sum = sum + _array[i]; 
+  }
+  return sum;
 }
 
-
+function averge(_array) {
+  let sum = 0;
+  for ( let i = 0; i < _array.length; i++ ) {
+    sum = sum + _array[i]; 
+  }
+  return sum / _array.length;
+}
+console.log (averge ([1, 2, 3, 4, 5])); // Expected: 3
+console.log (averge([4,2])); // Expected: 3
+console.log (averge([-1,1])); // Expected: 0
