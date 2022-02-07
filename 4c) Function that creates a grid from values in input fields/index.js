@@ -20,12 +20,11 @@ function gridMaker (gridContainer, R, C ){
     gridContainer.style.gridTemplateRows = `repeat(${R}, 1fr)`;
 }
 
-    document.querySelector("button").addEventListner("click", function(){
+    document.querySelector("button").addEventListner("click", function() {
 
     let elementReferens = document.querySelector("#grid");
     let nRows = document.querySelector("#inputRows").value;
     let nCols = document.querySelector("#inputCols").value;
 
     gridMaker(elementReferens, nRow, nCols);
-   
 });

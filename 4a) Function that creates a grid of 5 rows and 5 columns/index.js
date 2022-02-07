@@ -14,12 +14,12 @@ function testConsole (p1) {
 }
 
 function F25 (container) {
-  for ( let i = 0; i < 25; i++ ) {
-    let gridContainer = document.querySelector(container);
-    let div = document.createElement ("div");
+  for ( let i = 0; i < 25; i++ ) { 
+    let gridContainer = document.querySelector(container); //Selectar container//
+    let div = document.createElement ("div");//skapar ett element som är en div och lägger den i div//
     div.innerHTML = Math.floor(Math.random()* 25);
 
-    gridContainer.appendChild (div);
+    gridContainer.appendChild (div); //"appendar" hämtar gör så att den syns på sidan//
   }
 }
 F25("#gridContainer")

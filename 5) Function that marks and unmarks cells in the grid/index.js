@@ -51,4 +51,23 @@ the classList.
 
 */
 
+function createNumberDiv () {
 
+    // Create each numberDiv
+    let numberDiv = document.createElement("div");
+    numberDiv.innerHTML = randomNumber(100);
+  
+    // The eventListener so that it reacts on click
+    numberDiv.addEventListener("click", function() {
+  
+      // Toggle the selected class
+      numberDiv.classList.toggle("selected");
+  
+      // Update the results
+      updateResults("selected");
+  
+    });
+  
+    return numberDiv;
+  
+  }
