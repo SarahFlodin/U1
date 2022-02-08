@@ -1,4 +1,10 @@
 "use strict";
+// Program the complete Averager App here.
+// Don't forget to include your CSS-file in the folder
+
+// Include the link to your Github Repository here:
+// Link: https://github.com/SarahFlodin/U1
+
 
 // GLOBAL VARIABLES
 // None allowed
