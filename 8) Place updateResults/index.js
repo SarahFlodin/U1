@@ -168,7 +168,7 @@ function createNumberDiv () {
     // Toggle the selected class
     numberDiv.classList.toggle("selected");
     
-    numberDiv.addEventListener("click", updateResults("selected"));
+    updateResults("selected");
 
   });
 

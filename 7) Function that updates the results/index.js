@@ -92,6 +92,9 @@ function updateResults (className) {
 } 
 console.log( [1,3,4,10,0,1].join() );
 console.log( [1,3,4,10,0,1].join(" - ") );
+// Separator = .join, mellan varje så har du en separator. Tomma värden () är default
+// Används något annat tex. (-) så separerar den med det valda tecknet.
+
 /*
 For this part, we need an array with all the selected numbers.
 The function above will help us with that.
